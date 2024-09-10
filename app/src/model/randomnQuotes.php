@@ -1,5 +1,6 @@
 <?php
-class RandomQuotes
+namespace App\Src\Model;
+class RandomnQuotes
 {
     public static function quotes(): array
     {
@@ -18,6 +19,15 @@ class RandomQuotes
             "L’espace est vaste. Vous ne croiriez pas à quel point il est vaste." => "Douglas Adams, Le Guide du voyageur galactique",
             "La route est longue, mais la voie est libre." => "Star Trek",
             "La peur mène à la colère, la colère mène à la haine, la haine mène à la souffrance." => "Yoda, Star Wars"
+        ];
+    }
+    public static function randomnQuote(): array
+    {
+        $array = RandomnQuotes::quotes();
+        $key = array_rand($array);
+        return
+        [
+            $key => $array[$key],
         ];
     }
 }
