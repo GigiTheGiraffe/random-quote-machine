@@ -2,8 +2,10 @@
 
 namespace App\Src\Controllers;
 use App\Src\Model\RandomnImages as Image, App\Src\Model\RandomnQuotes as Quote;
-require_once '../model/randomnImages.php';
-require_once '../model/randomnQuotes.php';
+require_once __DIR__ . '/../model/randomnImages.php';
+require_once __DIR__ . '/../model/randomnQuotes.php';
+
+
 class Homepage
 {
     private string $imageUrl;
@@ -38,4 +40,4 @@ class Homepage
 
 $content = new Homepage();
 
-require_once '../../templates/view.php';
+require_once __DIR__ . '/../../templates/view.php';

@@ -1,2 +1,3 @@
 <?php
-use App\Src\Controllers\Homepage;
+ 
+require_once './src/controllers/homepage.php';
